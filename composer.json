@@ -1,0 +1,15 @@
+{
+    "name": "entr/papi-property-contact-form7-select",
+    "description": "Papi select control for available ContactForm 7 forms",
+    "type": "wordpress-plugin",
+    "require": {
+        "composer/installers": "~1.0"
+    },
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Zlatko Zlatev",
+            "email": "zlatko.zlatev@gmail.com"
+        }
+    ]
+}
