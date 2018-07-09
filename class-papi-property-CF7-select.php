@@ -17,9 +17,9 @@ class Papi_Property_CF7_Select extends Papi_Property_Dropdown {
 		$forms = WPCF7_ContactForm::find();
 
 		return array_reduce( $forms, function( $result, $form ) {
-			$result[$form->title] = $form->id;
+			$title = method_exists($form, 'title') ? $form->title() : $form->title;
+			$result[$title] = method_exists($form, 'id') ? $form->id() : $form->id;
 			return $result;
 		}, array() );
 	}
 }
-
